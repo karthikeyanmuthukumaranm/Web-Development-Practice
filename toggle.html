@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="togglecontent()">Click</button>
+        <div>
+            <p id="togglecontent" style="display: none;"> this is content</p>
+        </div>
+    </div> 
+    <script>
+        function togglecontent(){
+            const content=document.getElementById('togglecontent');
+            if (content.style.display=='none' || content.style.display===''){
+                content.style.display='block';
+            }else{
+                content.style.display='none'; 
+            }
+        }
+    </script>
+</body>
+</html>
